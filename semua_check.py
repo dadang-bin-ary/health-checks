@@ -25,6 +25,7 @@ def main():
 		sys.exit(1)
 	if check_disk_full(disk='/', min_gb=2, min_percent=10):
 		print('Disk Full.')
+		print('ahihihihihihi')
 		sys.exit(1)
 	print('Everything is ok')
 	sys.exit(0)
