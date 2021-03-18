@@ -35,7 +35,7 @@ def main():
 			everything_ok=False
 	if not everything_ok:
 		sys.exit(1)
-	print('aku ga mauuuuu'*5)
+	
 	if check_reboot():
 		print("Pending Reboot.")
 		sys.exit(1)
