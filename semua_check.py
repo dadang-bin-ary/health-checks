@@ -24,6 +24,14 @@ def check_root_full():
 	return check_disk_full(disk='/', min_gb=2, min_percent=10)
 
 def main():
+	checks=[
+		(check_reboot, "pending reboot"),
+		(check_root_full, "root partition full"),
+	]
+	for check,msg in checks:
+		if check():
+			print(msg)
+			sys.exit(1)
 	print('aku ga mauuuuu'*5)
 	if check_reboot():
 		print("Pending Reboot.")
