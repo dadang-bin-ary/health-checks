@@ -20,6 +20,7 @@ def check_disk_full(disk, min_gb, min_percent):
 	return False
 
 def main():
+	print('this is bullshit')
 	if check_reboot():
 		print("Pending Reboot.")
 		sys.exit(1)
